@@ -1,6 +1,4 @@
-﻿using System.Reflection;
-using System.Runtime.Intrinsics.X86;
-//Dado o conjunto de instruções a seguir, faça um algoritmo com quatro variações,
+﻿//Dado o conjunto de instruções a seguir, faça um algoritmo com quatro variações,
 //colocando o comando de repetição adequadamente, de forma a: 
 //a) Executar o conjunto 10 vezes;
 //b) Não executar nenhuma vez;
@@ -9,69 +7,51 @@ using System.Runtime.Intrinsics.X86;
 //- Ler A, B;
 //-Modulo = A mod B (calcula o resto da divisão).
 
+int A, B, num;
 
-Console.WriteLine("Hello, World!");
-        int A, B, modulo, N;
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine("Digite um valor para a: ");
+    int a = int.Parse(Console.ReadLine());
+    Console.WriteLine("Digite um valor para b: ");
+    int b = int.Parse(Console.ReadLine());
+    Console.WriteLine($"O resto da divisão de {a} / {b} é de: {a % b}");
+}
+for (int i = 0; i < 0; i++)
+{
+    Console.WriteLine("Digite um valor para a: ");
+    int a = int.Parse(Console.ReadLine());
+    Console.WriteLine("Digite um valor para b: ");
+    int b = int.Parse(Console.ReadLine());
+    Console.WriteLine($"O resto da divisão de {a} / {b} é de: {a % b}");
 
-        // a) Executar 10 vezes
-        Console.WriteLine("A) Executar 10 vezes");
-        for (int i = 1; i <= 10; i++)
+    for (int x = 0; x < 50; x++)
+    {
+        Console.WriteLine("Digite um valor para a: ");
+        A = int.Parse(Console.ReadLine());
+        Console.WriteLine("Digite um valor para b: ");
+        B = int.Parse(Console.ReadLine());
+        Console.WriteLine($"O resto da divisão de {A} / {B} é de: {A % B}");
+
+        for (int X = 0; X < 50; X++)
         {
-            Console.Write("Digite A: ");
-            A = int.Parse(Console.ReadLine());
-
-            Console.Write("Digite B: ");
+            Console.WriteLine("Digite um valor para a: ");
+             A = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite um valor para b: ");
             B = int.Parse(Console.ReadLine());
-
-            modulo = A % B;
-            Console.WriteLine("Módulo = " + modulo);
-        }
-
-        // b) Não executar nenhuma vez
-        Console.WriteLine("\nB) Não executar nenhuma vez");
-        for (int i = 1; i <= 0; i++)
-        {
-            Console.Write("Digite A: ");
-            A = int.Parse(Console.ReadLine());
-
-            Console.Write("Digite B: ");
-            B = int.Parse(Console.ReadLine());
-
-            modulo = A % B;
-            Console.WriteLine("Módulo = " + modulo);
-        }
-
-        // c) Executar 100 vezes usando dois for
-        Console.WriteLine("\nC) Executar 100 vezes");
-        for (int i = 1; i <= 10; i++)
-        {
-            for (int j = 1; j <= 10; j++)
-            {
-                Console.Write("Digite A: ");
-                A = int.Parse(Console.ReadLine());
-
-                Console.Write("Digite B: ");
-                B = int.Parse(Console.ReadLine());
-
-                modulo = A % B;
-                Console.WriteLine("Módulo = " + modulo);
-            }
-        }
-
-        // d) Executar N vezes
-        Console.WriteLine("\nD) Executar N vezes");
-        Console.Write("Informe N: ");
-        N = int.Parse(Console.ReadLine());
-
-        for (int i = 1; i <= N; i++)
-        {
-            Console.Write("Digite A: ");
-            A = int.Parse(Console.ReadLine());
-
-            Console.Write("Digite B: ");
-            B = int.Parse(Console.ReadLine());
-
-            modulo = A % B;
-            Console.WriteLine("Módulo = " + modulo);
+            Console.WriteLine($"O resto da divisão de {A} / {B} é de: {A % B}");
         }
     }
+}
+Console.WriteLine("Digite o número de vezes a ser executado: ");
+num = int.Parse(Console.ReadLine());
+
+
+for (int i = 1; i <= num; i++)
+{
+    Console.WriteLine("Digite um valor para a: ");
+    int a = int.Parse(Console.ReadLine());
+    Console.WriteLine("Digite um valor para b: ");
+    int b = int.Parse(Console.ReadLine());
+    Console.WriteLine($"O resto da divisão de {a} / {b} é de: {a % b}");
+}

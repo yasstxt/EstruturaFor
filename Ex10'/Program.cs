@@ -4,7 +4,7 @@
 //N! = 1 * 2 * 3 * 4 * ... *(N - 1) * N
 
 int numero;
-long fatoracao = 1;
+int fatoracao = 1;
 Console.Write("Digite um número inteiro: ");
 numero = int.Parse(Console.ReadLine());
 
@@ -13,4 +13,4 @@ for (int i = 1; i <= numero; i++)
     fatoracao *= i;
 }
 
-Console.WriteLine($"A fatoração de {fatoracao}, deu o valor final: {fatoracao}");
+Console.WriteLine($"A fatoração de {numero}, deu o valor final de: {fatoracao}");

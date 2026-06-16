@@ -3,13 +3,12 @@
 
 double massa;
 int tempo = 0;
-Console.Write("Digite a massa do material radioativo em gramas: ");
+Console.WriteLine("Digite a massa do material radioativo em gramas: ");
 massa = double.Parse(Console.ReadLine());
 
-for (; massa >= 0.05;)
+for (; massa >= 0.05; tempo += 50)
 {
-    massa /= 2;     
-    tempo += 50;    
+    massa /= 2;       
 }
 
 Console.WriteLine($"O tempo necessário foi de: {tempo} segundos.");

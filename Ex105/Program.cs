@@ -8,7 +8,7 @@ int proximo;
 for (int i = 3; i <= 20; i++)
 {
     proximo = primeiro + segundo;
-    Console.Write($" {primeiro}, {segundo}, {proximo}, ");
+    Console.WriteLine($" {primeiro}, {segundo}, {proximo}, ");
     primeiro = segundo;
     segundo = proximo;
 }

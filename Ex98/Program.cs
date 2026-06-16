@@ -12,11 +12,11 @@
 //7       49       343 
 //8       64       512 
 //9       81       729 
-//10      100      1000
+//10      100      1
 
-int acm = 0;
-
-for (int i = 0; i <= 10)
-{
-
-}
+for (int i = 0; i <= 10; i++)
+        {
+           int quadrado = i * i;
+           int cubo = i * i * i;
+            Console.WriteLine($"{i}{quadrado}{cubo}");
+        }
